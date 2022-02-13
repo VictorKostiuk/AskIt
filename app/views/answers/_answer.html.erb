@@ -1,0 +1,21 @@
+<%= tag.article class: 'mb-3 card', id: dom_id(answer) do %>
+  <div class="card-body">
+    <section class="card-text">
+      <time datetime="<%= answer.formatted_created_at %>">
+        <%= answer.formatted_created_at %>
+      </time>
+
+      <div class="mt-2 mb-3">
+        <%= sanitize answer.body %>
+      </div>
+
+    </section>
+    <%= link_to 'Edit', edit_question_answer_path(question, answer), class: 'btn btn-secondary btn-xs' %>
+
+    <%= link_to 'Delete', question_answer_path(question, answer), class: 'btn btn-danger btn-xs',
+                data: {method: :delete, confirm: 'Are you sure!'} %>
+  </div>
+
+<% end %>
+
+
