@@ -14,8 +14,9 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @question = @question.decorate
     @answer = @question.answers.build
-    @answers = @question.answers.order(created_at: :desc).page(params[:page]).per(6)
+    @answers = @question.answers.order(created_at: :desc).page(params[:page]).per(2)
   end
 
   def create
