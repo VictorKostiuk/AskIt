@@ -1,15 +1,15 @@
+# frozen_string_literal: true
+
 class AnswersController < ApplicationController
   include ActionView::RecordIdentifier
   before_action :set_question!
   before_action :set_answer!, except: [:create]
 
-  def edit
-
-  end
+  def edit; end
 
   def update
     if @answer.update answer_params
-      flash[:success] = "Question successfully updated!"
+      flash[:success] = 'Question successfully updated!'
       redirect_to question_path(@question, anchor: dom_id(@answer))
     else
       render :edit
@@ -20,7 +20,7 @@ class AnswersController < ApplicationController
     @answer = @question.answers.build answer_params
 
     if @answer.save
-      flash[:success] = "Answer successfully created!"
+      flash[:success] = 'Answer successfully created!'
       redirect_to question_path(@question)
     else
       @answers = Answer.order created_at: :desc
@@ -30,7 +30,7 @@ class AnswersController < ApplicationController
 
   def destroy
     @answer.destroy
-    flash[:success] = "Answer successfully deleted!"
+    flash[:success] = 'Answer successfully deleted!'
     redirect_to question_path(@question)
   end
 

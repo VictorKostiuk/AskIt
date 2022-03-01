@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class QuestionsController < ApplicationController
-  before_action :set_question, only: [:show, :edit, :update, :destroy]
+  before_action :set_question, only: %i[show edit update destroy]
 
   def index
     @questions = Question.order(created_at: :desc).page params[:page]
@@ -9,9 +11,7 @@ class QuestionsController < ApplicationController
     @question = Question.new
   end
 
-  def edit
-
-  end
+  def edit; end
 
   def show
     @question = @question.decorate
@@ -23,7 +23,7 @@ class QuestionsController < ApplicationController
     @question = Question.new question_params
 
     if @question.save
-      flash[:success] = "Question successfully created!"
+      flash[:success] = 'Question successfully created!'
       redirect_to questions_path
     else
       render :new
@@ -32,7 +32,7 @@ class QuestionsController < ApplicationController
 
   def update
     if @question.update question_params
-      flash[:success] = "Question successfully updated!"
+      flash[:success] = 'Question successfully updated!'
       redirect_to questions_path
     else
       render :edit
@@ -41,7 +41,7 @@ class QuestionsController < ApplicationController
 
   def destroy
     @question.destroy
-    flash[:success] = "Question successfully deleted!"
+    flash[:success] = 'Question successfully deleted!'
     redirect_to questions_path
   end
 
