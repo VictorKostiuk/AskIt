@@ -1,0 +1,17 @@
+uk:
+  en: Англійська
+  uk: Українська
+  activerecord:
+    attributes:
+      question:
+        title: "Заголовок"
+        body: "Текст"
+  pages:
+    index:
+      title: "Сало будеш?"
+  menu:
+    home: "Головна"
+  questions:
+    destroy:
+      success: Питання видалено!
+
