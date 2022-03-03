@@ -10,9 +10,9 @@
       </div>
 
     </section>
-    <%= link_to 'Edit', edit_question_answer_path(question, answer), class: 'btn btn-secondary btn-xs' %>
+    <%= link_to t('btn.edit'), edit_question_answer_path(question, answer), class: 'btn btn-secondary btn-xs' %>
 
-    <%= link_to 'Delete', question_answer_path(question, answer), class: 'btn btn-danger btn-xs',
+    <%= link_to t('btn.delete'), question_answer_path(question, answer), class: 'btn btn-danger btn-xs',
                 data: {method: :delete, confirm: 'Are you sure!'} %>
   </div>
 

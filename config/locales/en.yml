@@ -1,11 +1,48 @@
 en:
   en: English
   uk: Ukrainian
+  activerecord:
+    attributes:
+      question:
+        title: "Title"
+        body: "Body"
+      user:
+        name: "Name"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        email: "Email"
+        old_password: "Old password"
+      answer:
+        body: "Тіло"
   pages:
     index:
       title: "Welcome"
   menu:
     home: "Home"
-    questions:
-      destroy:
-        success: Question deleted!
+    questions: "Questions"
+    adminusers: "Admin users"
+    dropdown:
+      edit-profile: "Edit profile"
+      quit: "Quit"
+  questions:
+    destroy:
+      success: Question deleted!
+  btn:
+    back: "Back"
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    submit: "Submit"
+    upload: "Upload"
+    new:
+      answer: "New answer"
+      question: "New question"
+  phrases:
+    write-your-answer: "Write your answer"
+    edit-question: "Edit question"
+    new-question: "New question"
+    edit-profile: "Edit profile"
+    files: "Upload Files from XLSX"
+    download: "Download zipped XLSX"
+  answers:
+    title: "Answers"

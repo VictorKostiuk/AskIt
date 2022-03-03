@@ -6,12 +6,44 @@ uk:
       question:
         title: "Заголовок"
         body: "Текст"
+      user:
+        name: "Ім'я"
+        password: "Пароль"
+        password_confirmation: "Підтвердження паролю"
+        email: "Електронна пошта"
+        old_password: "Старий пароль"
+      answer:
+        body: "Тіло"
   pages:
     index:
       title: "Сало будеш?"
   menu:
     home: "Головна"
+    questions: "Всі питання"
+    adminusers: "Адміністратори"
+    dropdown:
+      edit-profile: "Редактувати профіль"
+      quit: "Вийти"
   questions:
     destroy:
       success: Питання видалено!
+  btn:
+    back: "Назад"
+    show: "Показати"
+    edit: "Редактувати"
+    delete: "Видалити"
+    submit: "Підтвердити"
+    upload: "Вивантажити"
+    new:
+      answer: "Нова відповідь"
+      question: "Нове запитання"
+  phrases:
+    write-your-answer: "Напишіть вашу відповідь"
+    edit-question: "Редагувати питання"
+    new-question: "Нове запитання"
+    edit-profile: "Редагування профілю"
+    files: "Завантажте файли з XLSX"
+    download: "Завантажити архів XLSX"
+  answers:
+    title: "Відповіді"
 
