@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class AnswersController < ApplicationController
+  include QuestionsAnswers
   include ActionView::RecordIdentifier
   before_action :set_question!
   before_action :set_answer!, except: [:create]
@@ -8,7 +9,7 @@ class AnswersController < ApplicationController
   def edit; end
 
   def update
-    if @answer.update answer_params
+    if @answer.update answer_update_params
       flash[:success] = 'Question successfully updated!'
       redirect_to question_path(@question, anchor: dom_id(@answer))
     else
@@ -23,8 +24,7 @@ class AnswersController < ApplicationController
       flash[:success] = 'Answer successfully created!'
       redirect_to question_path(@question)
     else
-      @answers = Answer.order created_at: :desc
-      render 'questions/show'
+      load_question_answers(do_render: true)
     end
   end
 
@@ -37,6 +37,10 @@ class AnswersController < ApplicationController
   private
 
   def answer_params
+    params.require(:answer).permit(:body).merge(user_id: current_user.id)
+  end
+
+  def answer_update_params
     params.require(:answer).permit(:body)
   end
 

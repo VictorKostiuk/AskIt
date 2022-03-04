@@ -19,6 +19,7 @@ gem 'webpacker', '6.0.0.beta.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'rails-i18n', '~> 6'
+gem 'gravatar'
 gem 'bcrypt', '~> 3.1.7'
 gem 'draper'
 gem 'kaminari', '~> 1.2'

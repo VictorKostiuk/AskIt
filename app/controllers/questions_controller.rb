@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
+  include QuestionsAnswers
   before_action :set_question, only: %i[show edit update destroy]
 
   def index
@@ -14,13 +15,11 @@ class QuestionsController < ApplicationController
   def edit; end
 
   def show
-    @question = @question.decorate
-    @answer = @question.answers.build
-    @answers = @question.answers.order(created_at: :desc).page(params[:page]).per(2)
+    load_question_answers
   end
 
   def create
-    @question = Question.new question_params
+    @question = current_user.questions.build question_params
 
     if @question.save
       flash[:success] = 'Question successfully created!'
