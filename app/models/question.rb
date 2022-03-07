@@ -16,9 +16,9 @@ class Question < ApplicationRecord
     created_at.strftime('%Y-%m-%d %H:%M:%S')
   end
 
-  scope :all_by_tags, ->(tag_ids) do
+  scope :all_by_tags, lambda { |tag_ids|
     questions = includes(:user, :question_tags, :tags)
     questions = questions.joins(:tags).where(tags: tag_ids) if tag_ids
     questions.order(created_at: :desc)
-  end
+  }
 end

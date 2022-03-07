@@ -18,17 +18,18 @@ gem 'webpacker', '6.0.0.beta.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-gem 'rails-i18n', '~> 6'
-gem 'gravatar'
+gem 'activerecord-import'
 gem 'bcrypt', '~> 3.1.7'
-gem 'draper'
-gem 'pagy'
-gem 'valid_email2'
-gem 'rubyzip'
 gem 'caxlsx'
 gem 'caxlsx_rails'
+gem 'draper'
+gem 'gravatar'
+gem 'jbuilder'
+gem 'pagy'
+gem 'rails-i18n', '~> 6'
 gem 'rubyXL'
-gem 'activerecord-import'
+gem 'rubyzip'
+gem 'valid_email2'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -49,11 +50,11 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'pry-rails'
   gem 'rubocop', '~> 1.18', require: false
   gem 'rubocop-performance', '~> 1.11', require: false
   gem 'rubocop-rails', '~> 2.11', require: false
   gem 'spring'
-  gem 'pry-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment = @commentable.comments.find params[:id]
     @comment.destroy
-    flash[:success] = "Comment destroyed"
+    flash[:success] = 'Comment destroyed'
     redirect_to question_path(@question)
   end
 

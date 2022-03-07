@@ -8,7 +8,6 @@ end
 
 # User.find_each { |u| u.send(:set_gravatar_hash) ; u.save}
 
-
 10.times do
   title = Faker::Hipster.word
   Tag.create title: title

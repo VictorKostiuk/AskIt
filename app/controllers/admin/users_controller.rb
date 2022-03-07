@@ -30,9 +30,9 @@ module Admin
         User.order(created_at: :desc).each do |user|
           zos.put_next_entry "user_#{user.id}.xlsx"
           zos.print render_to_string(
-                      layout: false, handlers: [:axlsx], formats: [:xlsx],
-                      template: 'admin/users/user', locals: { user: user }
-                    )
+            layout: false, handlers: [:axlsx], formats: [:xlsx],
+            template: 'admin/users/user', locals: { user: user }
+          )
         end
       end
 
