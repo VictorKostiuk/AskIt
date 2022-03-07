@@ -12,6 +12,10 @@
 </div>
 
 <div class="mb-3">
+  <%= render @question.tags %>
+</div>
+
+<div class="mb-3">
   <%= @question.decorate.user.gravatar %>
   <%= @question.decorate.user.name_or_email %>
 </div>
