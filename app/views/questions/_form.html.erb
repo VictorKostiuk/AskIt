@@ -1,6 +1,6 @@
-<%= render 'shared/errors', object: @question %>
+<%= render 'shared/errors', object: question %>
 
-<%= form_with model: @question do |f| %>
+<%= form_with model: question do |f| %>
   <div class="mb-3 row">
     <div class="col-sm-1 col-form-label">
       <%= f.label :title %>
@@ -26,10 +26,9 @@
         <%= f.label :tags %>
       </div>
 
-
       <div class="col-sm-9">
-        <%= f.collection_select :tag_ids, tags, :id, :title, {}, multiple: true,
-        class: 'js-multiple-select w-100'%>
+        <%= f.collection_select :tag_ids, question.tags, :id, :title, {}, multiple: true,
+        class: 'js-multiple-select w-100', data: {'ajax-url': '/api/tags'}%>
       </div>
     </div>
 

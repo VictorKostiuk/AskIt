@@ -7,8 +7,12 @@
               class: 'nav-link px-2', current_page: current_page %></li>
           <li><%= nav_tab t('menu.questions'), questions_path,
               class: 'nav-link px-2',current_page: current_page %></li>
-          <li><%= nav_tab t('menu.adminusers'), admin_users_path,
-              class: 'nav-link px-2',current_page: current_page %></li>
+          <li>
+            <% if current_user != nil && current_user.admin_role? %>
+                <%= nav_tab t('menu.adminusers'), admin_users_path,
+                    class: 'nav-link px-2',current_page: current_page %>
+            <% end %>
+          </li>
         </ul>
 
         <ul class="nav col-12 col-lg-auto mb-2 mb-md-0">

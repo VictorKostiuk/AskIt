@@ -18,7 +18,9 @@
 </section>
 
 <p class="mb-3">
-  <%= link_to t('btn.new.question'), new_question_path, class: 'btn btn-secondary' %>
+<% if policy(:question).new? %>
+    <%= link_to t('btn.new.question'), new_question_path, class: 'btn btn-secondary' %>
+<% end %>
 </p>
 
 <%== pagy_bootstrap_nav @pagy %>

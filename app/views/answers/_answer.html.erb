@@ -17,11 +17,14 @@
             </div>
           </div>
         </section>
+        <% if policy(answer).edit? %>
+          <%= link_to t('btn.edit'), edit_question_answer_path(question, answer), class: 'btn btn-secondary btn-xs' %>
+        <% end %>
 
-        <%= link_to t('btn.edit'), edit_question_answer_path(question, answer), class: 'btn btn-secondary btn-xs' %>
-
-        <%= link_to t('btn.delete'), question_answer_path(question, answer), class: 'btn btn-danger btn-xs',
+        <% if policy(answer).destroy? %>
+           <%= link_to t('btn.delete'), question_answer_path(question, answer), class: 'btn btn-danger btn-xs',
                     data: {method: :delete, confirm: 'Are you sure!'} %>
+        <% end %>
       </div>
     </div>
   </div>
