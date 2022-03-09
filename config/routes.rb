@@ -9,6 +9,9 @@ Rails.application.routes.draw do
     resource :session, only: %i[new create destroy]
     resources :users, only: %i[new create update edit]
 
+    resource :password_reset, only: %i[new create update edit]
+
+
     resources :questions do
       resources :comments, only: %i[create destroy]
 

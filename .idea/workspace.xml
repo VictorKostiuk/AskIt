@@ -2,62 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a34ef867-76cb-43f9-a216-faa9801966e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/blueprinters/tag_blueprint.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/admin/base_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/authorization.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/admin/users_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/authorship.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/packs/scripts/i18n/select.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/admin/user_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/answer_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/comment_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/question_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/user_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/guest_user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/users/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/users/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AskIt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AskIt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/password_resets_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mailers/password_reset_mailer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/recoverable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/rememberable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/password_reset_mailer/reset_email.en.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/password_reset_mailer/reset_email.en.text.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/password_reset_mailer/reset_email.uk.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/password_reset_mailer/reset_email.uk.text.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/password_resets/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/answers_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/tags_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/tags_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/commentable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/commentable.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/answer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/comment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/comment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/question.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/question.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/tag.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/tag.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/packs/entrypoints/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/packs/entrypoints/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/packs/entrypoints/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/packs/entrypoints/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/packs/scripts/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/packs/scripts/select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/users/_user.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/_user.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/answers/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/api/tags/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/api/tags/index.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/comments/_commentable.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_commentable.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/_question.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/_question.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/uk.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/uk.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220303192714_add_user_id_to_answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220303192714_add_user_id_to_answer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220303192745_add_user_id_to_questions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220303192745_add_user_id_to_questions.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +62,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/policies/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/password_reset_mailer" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.selected.package.stylelint" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="settings.editor.selected.configurable" value="ssh.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/password_reset_mailer" />
+      <recent name="$PROJECT_DIR$/app/views/reset_password_mailer" />
       <recent name="$PROJECT_DIR$/app/policies/admin" />
       <recent name="$PROJECT_DIR$/app/policies" />
     </key>
@@ -384,7 +353,7 @@
       <workItem from="1646593674697" duration="1444000" />
       <workItem from="1646596669445" duration="7057000" />
       <workItem from="1646656030247" duration="14172000" />
-      <workItem from="1646691415994" duration="21527000" />
+      <workItem from="1646691415994" duration="37664000" />
     </task>
     <servers />
   </component>
