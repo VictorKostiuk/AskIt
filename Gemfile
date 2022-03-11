@@ -31,6 +31,7 @@ gem 'rails-i18n', '~> 6'
 gem 'rubyXL'
 gem 'rubyzip'
 gem 'valid_email2'
+gem 'sidekiq'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
