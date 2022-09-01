@@ -38,4 +38,8 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+<<<<<<< HEAD
 .idea
+=======
+.idea
+>>>>>>> f57511c521ce90449d20bf6999897f6fcc467a19

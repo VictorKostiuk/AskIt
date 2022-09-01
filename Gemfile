@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
+gem "rails", "~> 7.0.0"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
@@ -18,17 +18,20 @@ gem 'webpacker', '6.0.0.beta.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-gem 'rails-i18n', '~> 6'
-gem 'gravatar'
+gem 'activerecord-import'
 gem 'bcrypt', '~> 3.1.7'
-gem 'draper'
-gem 'pagy'
-gem 'valid_email2'
-gem 'rubyzip'
+gem 'blueprinter'
 gem 'caxlsx'
 gem 'caxlsx_rails'
+gem 'draper'
+gem 'gravatar'
+gem 'pagy'
+gem 'pundit'
+gem 'rails-i18n', '> 7'
 gem 'rubyXL'
-gem 'activerecord-import'
+gem 'rubyzip'
+gem 'valid_email2'
+gem 'sidekiq'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -49,11 +52,12 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'pry-rails'
   gem 'rubocop', '~> 1.18', require: false
   gem 'rubocop-performance', '~> 1.11', require: false
   gem 'rubocop-rails', '~> 2.11', require: false
   gem 'spring'
-  gem 'pry-rails'
+  gem 'letter_opener'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
