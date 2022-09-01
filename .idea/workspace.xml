@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a34ef867-76cb-43f9-a216-faa9801966e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/decorators/comment_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/comment_decorator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/comment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/comment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/comments/_commentable.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_commentable.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220303192714_add_user_id_to_answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220303192714_add_user_id_to_answer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220303192745_add_user_id_to_questions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220303192745_add_user_id_to_questions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220303193447_remove_defoult_user_id_from_questions_answers.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Rails.Development: AskIt">
     <configuration name="Development: AskIt" type="RailsRunConfigurationType" factoryName="Rails">
@@ -149,7 +143,10 @@
       <updated>1646593214765</updated>
       <workItem from="1646593222058" duration="443000" />
       <workItem from="1646593674697" duration="1444000" />
-      <workItem from="1646596669445" duration="7057000" />
+      <workItem from="1646596669445" duration="8317000" />
+      <workItem from="1661411721765" duration="875000" />
+      <workItem from="1661593765078" duration="37000" />
+      <workItem from="1661866694047" duration="1586000" />
     </task>
     <servers />
   </component>
